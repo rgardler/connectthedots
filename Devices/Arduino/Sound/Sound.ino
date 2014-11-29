@@ -18,11 +18,11 @@ void loop() {
   }
   if(millis() - hightime >= SAMPLE_FREQUENCY) {
     Serial.print("{");
-    Serial.print('"millis":');
+    Serial.print("\"millis\":");
     Serial.print(millis());
-    Serial.print(',"seqno":');
+    Serial.print(",\"seqno\":");
     Serial.print(sequenceNumber++);
-    Serial.print(',"soundLvl:"');
+    Serial.print(",\"soundLvl:\"");
     Serial.print(high);
     Serial.println("}");
     
