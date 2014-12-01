@@ -22,8 +22,10 @@
 #  THE SOFTWARE.
 #  ---------------------------------------------------------------------------------
 #!/bin/bash
+. gateway.properties.template
+echo $devicename
 echo "Running CloudDemo..."
-sudo -u pi /usr/bin/mono /home/pi/RaspberryPiGateway/RaspberryPiGateway.exe -forever -deviceid C8CA5B13-A550-4FF0-B823-46D8A2640880 -devicename "R-PI 001" -address amqps://<keyname>:<key>@<namespace>.servicebus.windows.net -target ehdevices -tracelevel information >> /home/pi/RaspberryPiGateway/RaspberryPiGateway.log &
+sudo -u pi /usr/bin/mono /home/pi/RaspberryPiGateway/RaspberryPiGateway.exe -forever -deviceid $deviceid -devicename $devicename -address $address -target $target -tracelevel $tracelevel >> /home/pi/RaspberryPiGateway/RaspberryPiGateway.log &
 
 # Add the below line to /etc/rc.local
 #   /home/pi/RaspberryPiGateway/autorun.sh &
