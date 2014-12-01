@@ -1,0 +1,5 @@
+﻿deviceid=C8CA5B13-A550-4FF0-B823-46D8A2640880
+devicename="Ross Office" 
+address=amqps://D1:Fdq62K6arseTKb%2BUQOtrxzF8i1LXwYt19B0kajILLWg%3D@ConTheDots-ns.servicebus.windows.net 
+target=ehdevices
+tracelevel=information

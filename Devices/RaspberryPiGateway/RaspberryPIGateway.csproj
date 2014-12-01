@@ -51,6 +51,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\autorun.sh" />
+    <None Include="Scripts\gateway.properties.template" />
     <None Include="Scripts\SCPRPI.cmd" />
   </ItemGroup>
 </Project>
